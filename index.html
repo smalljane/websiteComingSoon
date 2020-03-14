@@ -7,16 +7,35 @@
 </head>
 <style>
     body{
-        color:lightpink;
-        background-color:rgb(182, 178, 178);
+        
+        background-color:rgb(216, 165, 117);
     }
     h1{
+        color:lightpink;
         text-align: center;
         padding-top:30vh;
         font-size:90px;
     }
 </style>
 <body>
-    <h1>Coming Soon...</h1>
+    <h1 class="typed"></h1>
+
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="typed.js"></script>
+    
+    <script >
+        
+     let typed = new Typed ('.typed',{
+         strings:['Coming Soon...'],
+         smartBackspace:true,
+         typeSpeed:30,
+         startDelay:500,
+         backSpeed:30,
+         loop:true,
+
+     })
+
+
+    </script>
 </body>
 </html>
